@@ -4,7 +4,7 @@ import styles from "../../styles/AppStyles";
 
 const SignInForm = () => {
   return (
-    <KeyboardAvoidingView>
+    <View>
       <TextInput
         style={styles.formInput}
         placeholderTextColor="#E4FFF9"
@@ -22,10 +22,11 @@ const SignInForm = () => {
 
       <View style={styles.buttonsWrapper}>
         <Text style={styles.button}>Sign in!</Text>
-        <Text style={styles.button}>Sign up!</Text>
       </View>
-    </KeyboardAvoidingView>
+
+      <Text style={styles.link}>Don't have an account? Create it!</Text>
+      <Text style={styles.link}>Forgot password? remaind it</Text>
+    </View>
   );
 };
-
 export default SignInForm;

@@ -4,7 +4,7 @@ import { Text, View } from "react-native";
 export const SignUpScreen = () => {
   return(
     <View>
-      <Text>hello</Text>
+      <Text>Trolly</Text>
     </View>
   )
 }

@@ -6,7 +6,7 @@ import SignInForm from "../../components/SignInForm/SignInForm";
 export const SignInScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>hello</Text>
+      <Text style={styles.title}>Trolly</Text>
       <SignInForm />
     </View>
   )
