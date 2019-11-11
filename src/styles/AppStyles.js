@@ -18,32 +18,32 @@ export default StyleSheet.create({
     fontSize: 50,
     fontWeight: "bold",
     color: "#000",
-    alignSelf:'center',
+    alignSelf: "center",
     marginBottom: 30
   },
   formInput: {
     height: 42,
     marginBottom: 15,
     padding: 10,
-    fontSize:16,
+    fontSize: 16,
     color: "#fff",
     backgroundColor: "#48CFAF",
-    borderRadius: 10,
+    borderRadius: 10
   },
   button: {
     fontSize: 22,
-    paddingTop:2,
+    paddingTop: 2,
     textAlign: "center",
     color: "#48CFAF",
-    width:120,
-    height:35,
+    width: 120,
+    height: 35,
     borderRadius: 10,
     borderWidth: 2,
-    borderColor: '#48CFAF'
+    borderColor: "#48CFAF"
   },
-  buttonsWrapper:{
+  buttonsWrapper: {
     marginTop: 10,
-    flexDirection:'row',
-    justifyContent: 'space-around',
+    flexDirection: "row",
+    justifyContent: "space-around"
   }
 });
