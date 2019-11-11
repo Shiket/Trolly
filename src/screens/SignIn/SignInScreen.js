@@ -3,11 +3,11 @@ import { Text, View } from "react-native";
 import styles from "../../styles/AppStyles";
 import SignInForm from "../../components/SignInForm/SignInForm";
 
-export const SignInScreen = () => {
+export const SignInScreen = props => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Trolly</Text>
       <SignInForm />
     </View>
-  )
-}
+  );
+};
