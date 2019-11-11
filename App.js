@@ -1,4 +1,4 @@
-import { SignInScreen } from "./src/screens";
+import { SignInScreen, SignUpScreen } from "./src/screens";
 import React, { Component } from "react";
 import { Text, View } from "react-native";
 import styles from "./src/styles/AppStyles";
@@ -8,6 +8,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <SignInScreen />
+        <SignUpScreen/>
       </View>
     );
   }
