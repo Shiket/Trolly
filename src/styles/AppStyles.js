@@ -5,9 +5,8 @@ export default StyleSheet.create({
     flex: 1,
     padding: 10,
     textAlign: "center",
-    alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#000",
+    backgroundColor: "#fff",
     color: "#FFF"
   },
   buttonText: {
@@ -16,15 +15,35 @@ export default StyleSheet.create({
     color: "#000"
   },
   title: {
-    fontSize: 25,
+    fontSize: 50,
     fontWeight: "bold",
-    color: "#FFF"
+    color: "#000",
+    alignSelf:'center',
+    marginBottom: 30
   },
   formInput: {
-    height: 40,
-    marginBottom: 10,
+    height: 42,
+    marginBottom: 15,
     padding: 10,
+    fontSize:16,
     color: "#fff",
-    backgroundColor: "#999"
+    backgroundColor: "#48CFAF",
+    borderRadius: 10,
+  },
+  button: {
+    fontSize: 22,
+    paddingTop:2,
+    textAlign: "center",
+    color: "#48CFAF",
+    width:120,
+    height:35,
+    borderRadius: 10,
+    borderWidth: 2,
+    borderColor: '#48CFAF'
+  },
+  buttonsWrapper:{
+    marginTop: 10,
+    flexDirection:'row',
+    justifyContent: 'space-around',
   }
 });
