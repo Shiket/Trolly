@@ -42,8 +42,15 @@ export default StyleSheet.create({
     borderColor: '#48CFAF'
   },
   buttonsWrapper:{
-    marginTop: 10,
+    marginTop: 20,
     flexDirection:'row',
-    justifyContent: 'space-around',
+    alignSelf: 'center',
+    marginBottom: 30
+  },
+  link: {
+    color: "#48CFAF",
+    fontSize: 15,
+    alignSelf: 'center',
+    marginTop: 10,
   }
 });

@@ -20,19 +20,14 @@ const SignInForm = () => {
         placeholder="Password"
       />
 
-      <TextInput
-        style={styles.formInput}
-        placeholderTextColor="#E4FFF9"
-        label="Repeat passowrd"
-        placeholder="Repeat password"
-      />
-
       <View style={styles.buttonsWrapper}>
         <Text style={styles.button}>Sign in!</Text>
-        <Text style={styles.button}>Sign up!</Text>
       </View>
+
+      <Text style={styles.link}>Don't have an account? Create it!</Text>
+      <Text style={styles.link}>Forgot password? remaind it</Text>
+
     </View>
   );
 };
-
-export default SignInForm;
+export default SignInForm
