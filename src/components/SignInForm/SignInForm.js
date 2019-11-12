@@ -2,7 +2,7 @@ import React from "react";
 import { TextInput, View, Text, KeyboardAvoidingView } from "react-native";
 import styles from "../../styles/AppStyles";
 
-const SignInForm = () => {
+const SignInForm = props => {
   return (
     <View>
       <TextInput
@@ -25,7 +25,7 @@ const SignInForm = () => {
       </View>
 
       <Text style={styles.link}>Don't have an account? Create it!</Text>
-      <Text style={styles.link}>Forgot password? remaind it</Text>
+      <Text style={styles.link}>Forgot password? Remind it.</Text>
     </View>
   );
 };
