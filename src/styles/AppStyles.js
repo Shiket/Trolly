@@ -3,11 +3,9 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
   container: {
     flex: 1,
-    padding: 10,
     textAlign: "center",
     justifyContent: "center",
-    backgroundColor: "#fff",
-    color: "#FFF"
+    resizeMode: "cover"
   },
   buttonText: {
     fontSize: 20,
@@ -15,19 +13,20 @@ export default StyleSheet.create({
     color: "#000"
   },
   title: {
-    fontSize: 50,
+    fontSize: 60,
     fontWeight: "bold",
-    color: "#000",
+    color: "#ffffffe5",
     alignSelf: "center",
     marginBottom: 30
   },
   formInput: {
     height: 42,
+    margin: 20,
     marginBottom: 15,
     padding: 10,
     fontSize: 16,
     color: "#fff",
-    backgroundColor: "#48CFAF",
+    backgroundColor: "#48CFAFb2",
     borderRadius: 10
   },
   button: {
@@ -52,5 +51,11 @@ export default StyleSheet.create({
     fontSize: 15,
     alignSelf: "center",
     marginTop: 10
+  },
+  backgroundImage: {
+    flex: 1,
+    width: "100%",
+    height: "100%",
+    resizeMode: "stretch" // or 'stretch'
   }
 });

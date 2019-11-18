@@ -16,5 +16,3 @@ const NavigationStack = createStackNavigator({
   Home: SignInScreen,
   Landing: SignUpScreen
 });
-
-export default createAppContainer(NavigationStack);
