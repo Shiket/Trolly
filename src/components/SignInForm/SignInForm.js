@@ -1,5 +1,5 @@
 import React from "react";
-import { TextInput, View, Text, KeyboardAvoidingView } from "react-native";
+import { TextInput, View, Text } from "react-native";
 import styles from "../../styles/AppStyles";
 
 const SignInForm = props => {
@@ -23,9 +23,6 @@ const SignInForm = props => {
       <View style={styles.buttonsWrapper}>
         <Text style={styles.button}>Sign in!</Text>
       </View>
-
-      <Text style={styles.link}>Don't have an account? Create it!</Text>
-      <Text style={styles.link}>Forgot password? Remind it.</Text>
     </View>
   );
 };
