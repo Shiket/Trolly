@@ -4,7 +4,6 @@ import styles from "../../styles/AppStyles";
 import SignInForm from "../../components/SignInForm/SignInForm";
 
 export const SignInScreen = props => {
-  console.debug(props);
   return (
     <View style={styles.container}>
       <ImageBackground

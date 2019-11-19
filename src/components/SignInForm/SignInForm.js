@@ -2,7 +2,7 @@ import React from "react";
 import { TextInput, View, Text } from "react-native";
 import styles from "../../styles/AppStyles";
 
-const SignInForm = props => {
+const SignInForm = () => {
   return (
     <View>
       <TextInput
