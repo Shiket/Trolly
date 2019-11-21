@@ -1,15 +1,8 @@
-import { SignInScreen, SignUpScreen } from "./src/screens";
-import { createAppContainer } from "react-navigation";
-import { createStackNavigator } from "react-navigation-stack";
+import React from "react";
 
-const NavigationStack = createStackNavigator(
-  {
-    Home: SignInScreen,
-    Landing: SignUpScreen
-  },
-  {
-    headerMode: "none"
-  }
-);
+import Navigator from "./src/components/navigation/Navigator";
+const App = () => {
+  return <Navigator />;
+};
 
-export default createAppContainer(NavigationStack);
+export default App;

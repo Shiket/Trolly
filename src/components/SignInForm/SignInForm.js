@@ -7,14 +7,14 @@ const SignInForm = () => {
     <View>
       <TextInput
         style={styles.formInput}
-        placeholderTextColor="#E4FFF9"
+        placeholderTextColor="#76FEC5"
         label="Email"
         placeholder="Email"
       />
 
       <TextInput
         style={styles.formInput}
-        placeholderTextColor="#E4FFF9"
+        placeholderTextColor="#76FEC5"
         style={styles.formInput}
         label="Password"
         placeholder="Password"
