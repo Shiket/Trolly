@@ -23,11 +23,7 @@ const SignInForm = () => {
       <View style={styles.buttonsWrapper}>
         <Text style={styles.button}>Sign in!</Text>
       </View>
-
-      <Text style={styles.link}>Don't have an account? Create it!</Text>
-      <Text style={styles.link}>Forgot password? remaind it</Text>
-
     </View>
   );
 };
-export default SignInForm
+export default SignInForm;

@@ -5,7 +5,7 @@ export default StyleSheet.create({
     flex: 1,
     textAlign: "center",
     justifyContent: "center",
-    resizeMode: 'cover'
+    resizeMode: "cover"
   },
   title: {
     fontSize: 60,
@@ -54,13 +54,13 @@ export default StyleSheet.create({
     marginTop: 25,
     flexDirection: 'row',
     alignSelf: 'center',
-    marginBottom: 20
+    marginBottom: 20,
   },
   link: {
     color: "#76FEC5",
     fontSize: 15,
-    alignSelf: 'center',
-    marginTop: 10,
+    alignSelf: "center",
+    marginTop: 10
   },
   backgroundImage: {
     flex: 1,
