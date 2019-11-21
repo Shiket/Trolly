@@ -18,7 +18,7 @@ export const SignUpScreen = props => {
 
         <Text style={styles.link}
           onPress={() => props.navigation.navigate("Landing")}>
-          Don't have an account? Create it!
+          Have an account already? SignIn
         </Text>
         <Text style={styles.link}>Forgot password? Remind it.</Text>
 
