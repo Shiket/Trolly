@@ -4,8 +4,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     textAlign: "center",
-    justifyContent: "center",
-    resizeMode: "cover"
+    justifyContent: "center"
   },
   title: {
     fontSize: 60,
@@ -68,6 +67,4 @@ export default StyleSheet.create({
     height: '100%',
     resizeMode: 'cover',
   },
-
-}
-);
+});
