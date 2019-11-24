@@ -6,6 +6,7 @@ export default NavigationStack = createStackNavigator(
     Landing: SignUpScreen
   },
   {
-    headerMode: "none"
+    headerMode: "none",
+    initialRouteName: "Landing"
   }
 );
