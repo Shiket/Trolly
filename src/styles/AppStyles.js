@@ -17,13 +17,13 @@ export default StyleSheet.create({
     width: 155,
     height: 155,
     marginRight: 15,
-    marginBottom: 40,
+    marginBottom: 40
   },
   logoWrapper: {
-    flexDirection: 'column',
+    flexDirection: "column",
 
-    display:'flex',
-    alignItems:'center'
+    display: "flex",
+    alignItems: "center"
   },
   formInput: {
     height: 44,
@@ -35,25 +35,37 @@ export default StyleSheet.create({
     backgroundColor: "#aaaaaa88",
     borderRadius: 10,
     borderWidth: 2.5,
-    borderColor: '#fff',
+    borderColor: "#fff"
   },
   button: {
     fontSize: 22,
     paddingTop: 3,
     textAlign: "center",
     color: "#76FEC5",
-    overflow: 'hidden',
+    overflow: "hidden",
     width: 120,
     height: 40,
     borderRadius: 10,
     borderWidth: 2.5,
-    borderColor: '#fff'
+    borderColor: "#fff"
+  },
+  signOutButton: {
+    fontSize: 22,
+    paddingTop: 3,
+    textAlign: "center",
+    color: "#ff5252",
+    overflow: "hidden",
+    width: 120,
+    height: 40,
+    borderRadius: 10,
+    borderWidth: 2.5,
+    borderColor: "#fff"
   },
   buttonsWrapper: {
     marginTop: 25,
-    flexDirection: 'row',
-    alignSelf: 'center',
-    marginBottom: 20,
+    flexDirection: "row",
+    alignSelf: "center",
+    marginBottom: 20
   },
   link: {
     color: "#76FEC5",
@@ -63,8 +75,8 @@ export default StyleSheet.create({
   },
   backgroundImage: {
     flex: 1,
-    width: '100%',
-    height: '100%',
-    resizeMode: 'cover',
-  },
+    width: "100%",
+    height: "100%",
+    resizeMode: "cover"
+  }
 });

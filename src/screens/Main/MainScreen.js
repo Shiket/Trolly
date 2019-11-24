@@ -1,12 +1,25 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, ImageBackground } from "react-native";
+import styles from "../../styles/AppStyles";
+import { withFirebaseHOC } from "../../firebase";
+import SignOutButton from "../../components/Main/SignOutButton";
 
-const MainScreen = () => {
+export const MainScreen = props => {
+  console.log(props);
   return (
-    <View>
-      <Text>Main Screen</Text>
+    <View style={styles.container}>
+      <ImageBackground
+        source={require("../../../assets/bg.jpg")}
+        style={{
+          width: null,
+          height: null,
+          resizeMode: "cover",
+          flex: 1,
+          justifyContent: "center"
+        }}
+      >
+        <SignOutButton />
+      </ImageBackground>
     </View>
   );
 };
-
-export default MainScreen;
