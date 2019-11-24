@@ -2,12 +2,38 @@ import React, { useState } from "react";
 import { TextInput, View, Text, KeyboardAvoidingView } from "react-native";
 import styles from "../../styles/AppStyles";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import { withFirebaseHOC } from "../../firebase";
 
-const SignUpForm = () => {
+const SignUpForm = props => {
+  const handleSignup = async () => {
+    try {
+      const response = await props.firebase.signupWithEmail(email, password);
+
+      if (response.user.uid) {
+        const { uid } = response.user;
+        const userData = { email, username, uid };
+        await props.firebase.addUserToDb(userData);
+      }
+
+      clearForm();
+    } catch (error) {
+      setError(error.message);
+    }
+  };
+
+  const clearForm = () => {
+    setUsername("");
+    setEmail("");
+    setPassword("");
+    setRePassword("");
+    setError("");
+  };
+
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rePassword, setRePassword] = useState("");
+  const [error, setError] = useState("");
 
   return (
     <KeyboardAvoidingView behavior="padding" enabled>
@@ -48,12 +74,13 @@ const SignUpForm = () => {
         onChangeText={rePassword => setRePassword(rePassword)}
       />
 
+      {error ? <Text>{error}</Text> : null}
       <TouchableOpacity style={styles.buttonsWrapper}>
-        <Text onPress={() => console.debug("eloelo")} style={styles.button}>
+        <Text onPress={() => handleSignup()} style={styles.button}>
           Sign Up!
         </Text>
       </TouchableOpacity>
     </KeyboardAvoidingView>
   );
 };
-export default SignUpForm;
+export default withFirebaseHOC(SignUpForm);

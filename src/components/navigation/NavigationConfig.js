@@ -1,5 +1,6 @@
 import { createStackNavigator } from "react-navigation-stack";
-import { SignInScreen, SignUpScreen } from "../../screens";
+import { SignInScreen, SignUpScreen, MainScreen } from "../../screens";
+
 export default NavigationStack = createStackNavigator(
   {
     Home: SignInScreen,
