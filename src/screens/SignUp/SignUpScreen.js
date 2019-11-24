@@ -7,21 +7,31 @@ export const SignUpScreen = props => {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={require('../../../assets/bg.jpg')}
-        style={{ width: null, height: null, resizeMode: "cover", flex: 1, justifyContent: 'center' }}>
-
+        source={require("../../../assets/bg.jpg")}
+        style={{
+          width: null,
+          height: null,
+          resizeMode: "cover",
+          flex: 1,
+          justifyContent: "center"
+        }}
+      >
         <View style={styles.logoWrapper}>
-          <Image source={require("../../../assets/wtfLogo5.png")} style={styles.logoImg} />
+          <Image
+            source={require("../../../assets/wtfLogo5.png")}
+            style={styles.logoImg}
+          />
         </View>
 
         <SignUpForm />
 
-        <Text style={styles.link}
-          onPress={() => props.navigation.navigate("Landing")}>
+        <Text
+          style={styles.link}
+          onPress={() => props.navigation.navigate("SignIn")}
+        >
           Have an account already? SignIn
         </Text>
         <Text style={styles.link}>Forgot password? Remind it.</Text>
-
       </ImageBackground>
     </View>
   );
